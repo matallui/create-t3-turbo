@@ -15,6 +15,10 @@ const defineConfig = (): ExpoConfig => ({
   },
   updates: {
     fallbackToCacheTimeout: 0,
+    url: "https://u.expo.dev/cb5cae1c-443c-4c75-894e-c13c015f4f63"
+  },
+  runtimeVersion: {
+    policy: "sdkVersion"
   },
   assetBundlePatterns: ["**/*"],
   ios: {
@@ -22,6 +26,7 @@ const defineConfig = (): ExpoConfig => ({
     bundleIdentifier: "your.bundle.identifier",
   },
   android: {
+    package: "com.matallui.t3turbo",
     adaptiveIcon: {
       foregroundImage: "./assets/icon.png",
       backgroundColor: "#1F104A",
@@ -29,7 +34,7 @@ const defineConfig = (): ExpoConfig => ({
   },
   extra: {
     eas: {
-      // projectId: "your-project-id",
+      projectId: "cb5cae1c-443c-4c75-894e-c13c015f4f63"
     },
   },
   plugins: ["./expo-plugins/with-modify-gradle.js"],
